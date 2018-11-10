@@ -28,4 +28,15 @@ function next_img(a){
     console.log(show_item[alt]);
     change_img(show_item[alt]);
     a.alt++;
+    if(a.alt>15){
+        a.alt=0
+    }
 }
+
+function auto_change(){
+   var a=document.getElementById("show");
+    next_img(a);
+}
+
+// 3行代码实现图片自动轮播
+var auto_show=setInterval("auto_change()",2000);

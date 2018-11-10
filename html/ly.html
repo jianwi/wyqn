@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>文艺青年</title>
     <link href="../css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -24,18 +25,20 @@
             <li>
                 <a href="../html/tu.html">画</a>
             </li>*
+             <li>
+                <a href="http://book.jialidun.vip" target="_blank">书</a>
+            </li>*
+             <li>
+                <a href="http://f.yiban.cn/iapp230727" target="_blank">玩</a>
+            </li>*
+        
             <li>
-                <a href="../html/ly.html" style="
-                display: inline-block;
-                border: #343434 double 2px;
-                background: #343434;
-               border-radius:3px ;
-                color: #caddf5;">留言</a>
+                <a href="../html/ly.html" id="a_s">留言</a>
             </li>
         </nav>
     </header>
     <section>
-        <form>
+        <form method="post" action="http://wysj.jianwi.cn/ly.php" target="abc" id="ly_form" >
             <div id="ly">
                 <h3 style="text-align: center">留言吧！</h3>
                 <br>
@@ -58,22 +61,29 @@
                     <tr>
                         <td>留言</td>
                         <td>
-                            <textarea cols="66" rows="5">批评一下吧</textarea>
+                            <textarea cols="66" rows="5" name="ly">批评一下吧</textarea>
                         </td>
                     </tr>
                 </table>
 
-                <input type="submit" value="send">
+                <input type="submit" value="send" id="send_ly" onclick="submit_it()" >
+                <br>
+                <div id="pl_show">
+                
+                </div>
             </div>
         </form>
+        <iframe name="abc" style="display:none"></iframe>
     </section>
     <footer>
         <p>文艺青年
-            <p>
+        </p>
 
                 <p>简约而不简单</p>
                 <P>Design by LiangGe shaZi</P>
     </footer>
 </body>
+<script src="http://wysj.jianwi.cn/ly.php?callback=jsnopCallback"></script>
 
+<script src="../js/ly.js"></script>
 </html>

@@ -19,8 +19,7 @@
                 <a href="../html/shi.html">诗</a>
             </li>*
             <li>
-                <a href="../html/ge.html" style="
-                display: inline-block;
+                <a href="../html/ge.html" style=" display: inline-block;
                 border: #343434 double 2px;
                 background: #343434;
                border-radius:50% ;
@@ -29,23 +28,39 @@
                 color: #caddf5;">歌</a>
             </li>*
             <li>
-                <a href="../html/tu.html">画</a>
+                <a href="tu.html">画</a>
             </li>*
             <li>
-                <a href="../html/ly.html">留言</a>
+                <a href="http://book.jialidun.vip" target="_blank">书</a>
+            </li>*
+             <li>
+                <a href="http://f.yiban.cn/iapp230727" target="_blank">玩</a>
+            </li>*
+            <li>
+                <a href="ly.html">留言</a>
             </li>
         </nav>
     </header>
+
     <section>
         <video src="../res/mus_1.mp4" id="ge" controls></video>
         <div class="ge">
+            <form action="http://wysj.jianwi.cn/ge.php" method="get" target="abc" accept-charset="utf-8">                
+            <input type="text" id="s_ge" name="name" placeholder="输入歌名">
+
+            <input type="submit" value="搜索" onclick="search_song()">   
+
+            </form>
+        <iframe name="abc" style="display: none;"></iframe>  
         <p>my songs,my heart!</p>
         <p>songs goes with heart beating</p>
+
+        <div id="song_list">
             <li>
                 <a class="musc" href="../res/mus_1.mp4">Some Thing Just Like This</a>
             </li>
             <li>
-                <a class="musc" href="http://d1.yooc.me/tuwenke/20181022081903866411.mp4">Superstar</a>
+                <a class="musc" href="../res/mus_2.mp4">Superstar</a>
             </li>
             <li>
                 <a class="musc" href="http://d1.yooc.me/tuwenke/20181022082124641487.mp4">All Falls Down</a>
@@ -62,6 +77,7 @@
             <li>
                 <a class="musc" href="http://d1.yooc.me/tuwenke/20181022082945898925.mp4">Let Me Love You</a>
             </li>
+           </div>
            </div> 
     </section>
     <footer>
@@ -71,6 +87,7 @@
             <P>Design by LiangGe shaZi</P>
                 </footer>
 </body>
+<b></b>
 <script src="../js/ge.js"></script>
 
 </html>
